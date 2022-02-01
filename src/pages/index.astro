@@ -1,5 +1,6 @@
 ---
 import Form from "../components/form.astro";
+import { Button } from '../components/button.tsx';
 ---
 
 <html lang="en">
@@ -19,6 +20,8 @@ import Form from "../components/form.astro";
 		<div class="container">
 			<h1>Example <em>Astro.build</em></h1>
 			<Form titleText="Example Form" className="form" />
+			<hr />
+			<Button client:idle className="button">Click Me!</Button>
 		</div>
 	</body>
 </html>
