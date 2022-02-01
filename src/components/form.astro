@@ -1,0 +1,12 @@
+---
+export interface Props {
+  titleText: string;
+  className?: string;
+}
+
+const { titleText, className = '' } = Astro.props;
+---
+
+<form class={className}>
+    <h3>{titleText}</h3>
+</form>
