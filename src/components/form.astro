@@ -7,6 +7,35 @@ export interface Props {
 const { titleText, className = '' } = Astro.props;
 ---
 
+<style>
+  form {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0 0 1.5em;
+  }
+
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+
+  label {
+    font-style: 14px;
+    margin: 0 2rem 0 0;
+  }
+</style>
+
 <form class={className}>
-    <h3>{titleText}</h3>
+  <h3>{titleText}</h3>
+  <fieldset>
+    <label>First Name</label>
+    <input type="text" name="first_name" />
+  </fieldset>
+  <fieldset>
+    <label>Last Name</label>
+    <input type="text" name="last_name" />
+  </fieldset>
 </form>

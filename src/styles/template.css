@@ -37,3 +37,16 @@ h1 em {
   color: #999;
   font-style: normal;
 }
+
+/* -----------------------------------
+ *
+ * Hr
+ *
+ * -------------------------------- */
+
+hr {
+  border: 0;
+  border-top: 2px solid #b6b6b6;
+  margin: 3rem 0;
+  outline: none;
+}
