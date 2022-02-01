@@ -1,4 +1,4 @@
-import { h } from 'preact'
+import { h } from 'preact';
 import { useState } from 'preact/hooks';
 
 /* -----------------------------------
@@ -8,8 +8,8 @@ import { useState } from 'preact/hooks';
  * -------------------------------- */
 
 interface IProps {
-   className?: string;
-   children?: any;
+  className?: string;
+  children?: any;
 }
 
 /* -----------------------------------
@@ -19,17 +19,19 @@ interface IProps {
  * -------------------------------- */
 
 function Button({ className, children }: IProps) {
-   const [isActive, setIsActive ] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-   return (
-      <button class={className} onClick={onClick}>{children}</button>
-   );
+  return (
+    <button class={className} onClick={onClick}>
+      {children}
+    </button>
+  );
 
-   function onClick() {
-      setIsActive(!isActive);
+  function onClick() {
+    setIsActive(!isActive);
 
-      console.log('Button.onClick', { isActive });
-   }
+    console.log('Button.onClick', { isActive });
+  }
 }
 
 /* -----------------------------------
